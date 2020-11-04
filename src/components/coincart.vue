@@ -27,8 +27,8 @@
 export default {
   methods: {
       coins () {
-          return this.coicCart.filter(item => item.name !== 'Rial')
-      }
+          return this.coicCart.filter(item => item.name !== 'Rial').slice(0,12)
+      },
   },
   created () {
       fetch('https://www.excoino.com/api/v3/core/currencies')
@@ -64,6 +64,7 @@ background-color: #eeeeee;
 border-radius: 10px;
 min-width: 200px;
 margin-left: 12px;
+box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3),0 8px 9px 1px rgba(0,0,0,0.2)
 }
 .coin-img {
     height: 30px;

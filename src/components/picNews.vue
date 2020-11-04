@@ -49,7 +49,7 @@ box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3),0 8px 9px 1px rgba(0,0,0,0.2)
 .pic-news-img {
     border-radius: 1px;
     width: 100%;
-    height: 100%;
+    height: 285px;
 }
 .pic-news1 {
     text-align: center;

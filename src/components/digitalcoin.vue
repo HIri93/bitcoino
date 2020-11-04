@@ -1,7 +1,7 @@
 <template>
     <div class="digitalcoin">
         <div class="digitalcoin-header">
-            <a href="#"><i class="fas fa-angle-left"/> لیست کامل ارزها</a>
+            <router-link to="/allcoins"><i class="fas fa-angle-left"/> لیست کامل ارزها</router-link>
             <h2>
                 قیمت لحظه ای ارزهای دیجیتال
             </h2>

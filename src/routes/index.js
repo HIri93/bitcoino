@@ -3,6 +3,9 @@ import { createRouter, createWebHistory } from "vue-router";
 import App from "../pages/App.vue";
 import NotFound from "../pages/NotFound"
 
+const Allcoins = () => import(/* webpackChunkName: "Allcoins" */'../pages/Allcoins')
+const wallet = () => import(/* webpackChunkName: "wallet" */'../pages/wallet')
+
 const routes = [
   {
     path: "/",
@@ -13,6 +16,14 @@ const routes = [
     path: "/home",
     name: "home",
     component: App
+  },
+  {
+    path: "/allcoins",
+    component: Allcoins
+  },
+  {
+    path: "/wallet",
+    component: wallet
   },
   {
     path: "/:catchAll(.*)",

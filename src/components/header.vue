@@ -2,7 +2,8 @@
 <div class="navbar-container">
     <!-- left side of header -->
     <div class="navbar">
-        <a id= icon href = "#"><Image/></a>
+        <!-- <a id= icon href = "#"><Image/></a> -->
+        <router-link to="/Home"><Image/></router-link>
         <button class = "btn1">
             ثبت نام
             <i class="fa fa-user-plus"></i>
@@ -15,11 +16,12 @@
 
     <!-- right side of header -->
     <div class="navbar-right">
-        <a href = "#">صفحه اصلی</a>
-        <a href = "#">قیمت ارزها</a>
+        <router-link to="/home">صفحه اصلی</router-link>
+        <router-link to="/allcoins">قیمت ارزها</router-link>
         <a href = "#">دانشنامه</a>
         <a href = "#">وبلاگ</a>
-        <a href="#" class="orange-tag">کیف پول امن</a>
+        <!-- <a href="#" class="orange-tag">کیف پول امن</a> -->
+        <router-link to="/wallet" class="orange-tag">کیف پول امن</router-link>
         <a href="#" class="blue-tag">درگاه پرداخت رمزارز<img src="https://www.excoino.com/static/img/f801afe104db1de048b65087aaebb688.png"></a>
     </div>
 </div>

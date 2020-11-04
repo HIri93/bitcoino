@@ -53,6 +53,9 @@ export default {
   mounted: function() {
     this.startSlide();
   },
+  beforeUnmount: function () {
+    clearInterval(this.timer)
+  },
 
   methods: {
     startSlide: function() {
@@ -82,6 +85,7 @@ export default {
     overflow: hidden;
     position: relative;
     height: 372px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3),0 8px 9px 1px rgba(0,0,0,0.2)
 
 }
 .slider-box{
